@@ -2,16 +2,19 @@
 
 Console.Clear();
 Console.Write("Введите первое число: ");
-int a = int.Parse(Console.ReadLine());
+int a = Convert.ToInt32((Console.ReadLine()));
 
 Console.Write("Введите второе число: ");
-int b = int.Parse(Console.ReadLine());
+int b = Convert.ToInt32((Console.ReadLine()));
 
-double exponentiation(int a, int b)
+int exponentiation(int a, int b)
 {
-    double result = Math.Pow(a, b);
+    int result = 1;                           // Math.Pow(a, b)
+    for (int i = 1; i <= b; i++)
+    {
+        result = result*a;
+    }
     return result;
 }
-double expo = exponentiation(a, b);
-Console.Write($"Число {a} в степени числа {b}: ");
-Console.WriteLine(expo);
+int Exponentiation = exponentiation(a, b);
+Console.Write($"Число {a} в степени числа {b}: " + Exponentiation);
