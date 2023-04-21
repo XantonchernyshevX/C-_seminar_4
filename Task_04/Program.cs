@@ -31,20 +31,3 @@
 // }
 // int[] array = new int[10];
 
-
-// int a = 3;
-// int b = 4;
-// int result = a*b;
-// System.Console.WriteLine(result);
-
-
-void Sum(int x, int y)
-{
-    int x = int.Parse(Console.ReadLine());
-    int y = int.Parse(Console.ReadLine());
-    int result = x*y;
-    Console.WriteLine($"{result}");
-}
- 
-Sum(x, y);    // 10 + 15 = 25
-
